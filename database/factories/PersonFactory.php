@@ -18,6 +18,8 @@ class PersonFactory extends Factory
         return [
             'name' => $this->faker->name,
             'age' => $this->faker->numberBetween(1,100),
+            'created_at' => $this->faker->date(),
+            'updated_at' => $this->faker->date(),
         ];
     }
 }

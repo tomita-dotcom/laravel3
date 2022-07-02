@@ -3,8 +3,10 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use App\Models\Person;
 
-class PersonTableSeeder extends Seeder
+class PeopleTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +15,6 @@ class PersonTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Person::factory()->count(5)->create();
     }
 }
